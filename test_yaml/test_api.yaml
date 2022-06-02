@@ -1,0 +1,26 @@
+#用例1
+-
+  name: 高校信息查询接口
+  request:
+    url: https://api.yonyoucloud.com/apis/dst/collegeInfoQuery/collegeInfoQuery
+    method: get
+    headers:
+      authoration: apicode
+      apicode: 823f489e8f5742e0afaa32ac791a38a1
+    params:
+      name: 长安大学
+  validate:
+    - eq: {msg: ok}
+#用例2
+-
+  name: 高校信息查询接口
+  request:
+    url: https://api.yonyoucloud.com/apis/dst/collegeInfoQuery/collegeInfoQuery
+    method: get
+    headers:
+      authoration: apicode
+      apicode: 823f489e8f5742e0afaa32ac791a38a1
+    params:
+      name: 长安大学
+  validate:
+    - eq: {msg: error}
