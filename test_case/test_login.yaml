@@ -1,0 +1,24 @@
+#用例1
+-
+  name: 登录接口
+  request:
+    url: http://hn216.api.yesapi.cn/?&s=App.User.Login
+    method: post
+    param:
+      app_key: 5791590777AD8ABCC93E8DD18021745D
+      username: 18710856328
+      password: 9080ff27462c861c1d56dcf751c630f0
+  returns:
+    code: 200
+#用例2
+-
+  name: 登录接口
+  request:
+    url: http://hn216.api.yesapi.cn/?&s=App.User.Login
+    method: post
+    param:
+      app_key: 5791590777AD8ABCC93E8DD18021745D
+      username: 18710856328
+      password: 123456
+  returns:
+    code: 200
